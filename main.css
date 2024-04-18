@@ -1,0 +1,409 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+:root{
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Outfit;
+  font-size: 16px;
+  font-size: 400;
+}
+
+.wrapper{
+  width: 100%;
+  background-color: var(--White);
+}
+
+.header{
+  width: 100%;
+}
+
+.header img{
+  width: 100%;
+  height: auto;
+}
+
+.main{
+  padding: 2rem 2.5rem;
+}
+
+.recipe h2{
+  font-family: "Young Serif";
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: var(--Dark-Charcoal);
+  padding: 0 0 1rem 0;
+}
+
+.recipe p{
+  font-weight: 400;
+  color: var(--Wenge-Brown);
+  font-size: 1rem;
+  padding: 0 0 1.5rem 0;
+}
+
+.prep-time{
+  background-color: var(--Rose-White);
+  border-radius: .5em;
+  padding: 1em;
+  margin: .5rem 0 2rem 0;
+}
+
+.prep-time h4{
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--Dark-Raspberry);
+  padding: 0 0 0 .5rem ;
+  margin: 0 0 .5rem 0;
+}
+
+.prep-time ul{
+  color: var(--Dark-Raspberry);
+  margin: 0 0 0 1.5em;
+}
+
+.prep-time p{
+  color: var(--Wenge-Brown);
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  padding-left: .5em;
+}
+
+.prep-time span{
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--Dark-Charcoal);
+}
+
+.h2{
+  font-family: "Young Serif";
+  color: var(--Nutmeg);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.ingredients{
+  padding-bottom: 1rem;
+  border-bottom: solid .1rem var(--Light-Grey);
+}
+
+.ingredients li{
+  color: var(--Dark-Raspberry);
+  margin: 0 0 0 1.5em;
+}
+
+.ingredients p{
+  color: var(--Wenge-Brown);
+  font-size: 1rem;
+  margin: .8rem 0;
+  padding-left: 1em;
+}
+
+
+.instructions{
+  padding-bottom: 1rem;
+  border-bottom: solid .1rem var(--Light-Grey);
+}
+
+.instructions li{
+  color: var(--Dark-Raspberry);
+  margin: 0 0 0 1.5em;
+  font-weight: 800;
+}
+
+.instructions p{
+  color: var(--Wenge-Brown);
+  font-size: .8rem;
+  margin: .8rem 0;
+  padding-left: 1em;
+  font-weight: 400;
+}
+
+.instructions span{
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--Dark-Charcoal);
+}
+
+.nutrition p{
+  font-weight: 400;
+  color: var(--Wenge-Brown);
+  font-size: 1rem;
+  padding: 0 0 1rem 0;
+}
+
+.nutrition table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition table .row{
+  height: 2.5em;
+}
+
+.nutrition table .dark{
+  color: var(--Wenge-Brown);
+  padding-left: 1.5em;
+  font-weight: 400;
+}
+
+.nutrition table .light{
+  color: var(--Nutmeg);
+  font-weight: 800;
+  padding-left: 1.5em;
+}
+
+.nutrition .tb{
+  border-top: .1em solid var(--Light-Grey);
+}
+
+
+@media screen and (min-width: 375px){
+  .recipe h2{
+    font-size: 1.9rem;
+    padding: 0 0 1rem 0;
+  }
+  
+  .recipe p{
+    font-size: 1.2rem;
+    padding: 0 0 1.5rem 0;
+  }
+
+  .prep-time{
+    border-radius: .7em;
+  }
+  
+  .prep-time h4{
+    font-size: 1.2rem;
+  }
+  
+  .prep-time p{
+    font-size: 1.3rem;
+  }
+  
+  .prep-time span{
+    font-size: 1.25rem;
+  }
+
+  .h2{
+    font-size: 1.7rem;
+  }
+  
+  .ingredients p{
+    font-size: 1.2rem;
+  }
+
+  .instructions p{
+    font-size: 1.2rem;
+  }
+  
+  .instructions span{
+    font-size: 1.2rem;
+  }
+
+  .nutrition p{
+    font-size: 1.2rem;
+  }
+  
+  .nutrition table .row{
+    height: 2.7em;
+  }
+
+  .nutrition table .dark{
+    font-size: 1.2em;
+  }
+  
+  .nutrition table .light{
+    font-size: 1.1em;
+  }
+  
+  .nutrition .tb{
+    border-top: .15em solid var(--Light-Grey);
+  }
+}
+
+
+@media screen and (min-width: 425px){
+  .main{
+    padding: 2.5rem 3rem;
+  }
+  
+
+  .recipe h2{
+    font-size: 2.5rem;
+    padding: 0 0 1rem 0;
+  }
+  
+  .recipe p{
+    font-size: 1.5rem;
+    padding: 0 0 1.5rem 0;
+  }
+
+  .prep-time{
+    border-radius: .7em;
+  }
+  
+  .prep-time h4{
+    font-size: 1.5rem;
+  }
+  
+  .prep-time p{
+    font-size: 1.6rem;
+  }
+  
+  .prep-time span{
+    font-size: 1.55rem;
+  }
+
+  .h2{
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  .ingredients{
+    padding-bottom: 1.5rem;
+    border-bottom: solid .2rem var(--Light-Grey);
+  }
+  
+  .ingredients p{
+    font-size: 1.5rem;
+  }
+
+  .instructions{
+    padding-bottom: 1.5rem;
+    border-bottom: solid .2rem var(--Light-Grey);
+  }
+
+  .instructions p{
+    font-size: 1.5rem;
+  }
+
+  .instructions li{
+    font-size: 1.3rem;
+  }
+  
+  .instructions span{
+    font-size: 1.55rem;
+  }
+
+  .nutrition p{
+    font-size: 1.5rem;
+  }
+  
+  .nutrition table .row{
+    height: 5em;
+  }
+
+  .nutrition table .dark{
+    font-size: 1.6em;
+  }
+  
+  .nutrition table .light{
+    font-size: 1.5em;
+  }
+
+  .nutrition .tb{
+    border-top: .2em solid var(--Light-Grey);
+  }
+}
+
+
+@media screen and (min-width: 768px){
+
+  body{
+    background-color: var(--Eggshell);
+    padding: 4em 3em;
+    font-size: 18px;
+  }
+
+  .wrapper{
+    border-radius: 2em;
+    padding: 2em;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .header img{
+    border-radius: .8em;
+  }
+  
+  .main{
+    padding: 2.5rem 0;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  body{
+    padding: 4.5em 3.5em;
+  }
+
+  .wrapper{
+    border-radius: 2em;
+    padding: 2.5em;
+    max-width: 750px;
+  }
+
+  .header img{
+    border-radius: .9em;
+  }
+  
+  .main{
+    padding: 3rem 0;
+  }
+}
+
+
+@media screen and (min-width: 1440px){
+  body{
+    padding: 5em 4em;
+  }
+
+  .wrapper{
+    border-radius: 2em;
+    padding: 3em;
+    max-width: 1024px;
+  }
+
+  .header img{
+    border-radius: 1em;
+  }
+  
+  .main{
+    padding: 3.5rem 0;
+  }
+
+  .recipe h2{
+    font-size: 3rem;
+    padding: 0 0 1rem 0;
+  }
+
+  .h2{
+    font-size: 2.5rem;
+    margin: 3rem 0;
+  }
+}
